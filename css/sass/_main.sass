@@ -1,0 +1,126 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    outline: none
+        
+::selection
+    color: #fff
+    background: $primColor
+
+body
+    font-size: 32px  
+    font-family: 'Inter', sans-serif
+    font-weight: 300 
+    color: $primColor
+    min-height: 80vh
+    overflow-x: hidden 
+
+.container
+    margin: 5rem auto 3rem
+    padding: 2rem
+    display: flex
+    max-width: 1000px
+    align-items: center
+    position: relative
+
+    @media (max-width: 700px)
+        flex-direction: column-reverse
+        text-align: center
+
+.text-wrap
+    width: 60%
+    transform: translateX(11%)
+
+    @media (max-width: 700px)
+        width: auto
+        transform: translateX(0)
+        padding-top: 2rem 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .quote-txt
+        margin-bottom: 1.5rem
+        position: relative
+
+        img
+            position: absolute
+            bottom: 87%
+            left: 17%
+            max-width: 110px
+
+    .name
+        font-size: 20px
+        font-weight: 700
+
+    .job-title
+        font-size: 20px
+        font-weight: 500
+        color: $secColor        
+
+
+
+.img-wrap
+    width: 40%
+    position: relative
+
+    @media (max-width: 700px)
+        width: 90%
+        margin-bottom: 5rem 
+
+    #person_img
+        position: relative
+        width: 100% 
+        box-shadow: 4px 20px 24px #1a1a1a17
+        z-index: -1
+
+    .bg
+        position: absolute
+        width: 135%
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        z-index: -2    
+
+    .btns-wrap
+        width: 20%
+        min-width: 77px
+        background: #fff
+        border-radius: 25px
+        padding: .75rem 1rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        bottom: -3%
+        left: 10%
+
+        img
+            cursor: pointer
+            transition: all ease-in-out .2s
+
+            &:hover
+                transform: scale(1.1)
+
+            &:active
+                transform: scale(.9)    
+
+
+
+.attribution
+    text-align: center
+    padding: 1rem
+    font-size: 18px
+    bottom: 0
+
+.bottom-bg
+    position: absolute
+    z-index: -4
+    bottom: 0%
+    left: 0
+    width: 50%
+    @media(max-width: 700px)
+        bottom: auto 
+
+        
